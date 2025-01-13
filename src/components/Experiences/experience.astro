@@ -1,0 +1,20 @@
+---
+const { experience, reverse } = Astro.props;
+---
+
+<section class="grid grid-cols-1 lg:grid-cols-2">
+    <!--image-->
+    <div class={`${reverse ? 'order-1' : 'order-1 lg:order-2'}`}>
+        <div class="w-full relative pt-[56.25%]">
+            <div class="absolute top-0 left-0 size-full bg-red-500"></div>
+        </div>
+    </div>
+    <!-- description -->
+    <div class={`px-4 py-2 flex flex-col justify-between ${reverse ? 'order-2 lg:order-1' : 'order-2'}`}>
+        <div>
+            <h2 class="text-gray-200 text-xl"> {experience.title} </h2>
+            <p class="text-gray-400 text-base lg:line-clamp-6 mt-2"> {experience.description} </p>
+        </div>
+        <a href={experience.link} class="h-10 px-10 rounded-md bg-indigo-400 inline-flex items-center ml-auto text-gray-100 text-lg" target="_blank" title={experience.title}> Demo </a>
+    </div>
+</section>
