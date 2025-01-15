@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: [
+        './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+    ],
 	theme: {
         screens: {
             'sm': '640px',
@@ -15,7 +17,11 @@ export default {
         fontFamily: {
             'archivo': 'Archivo',
         },
-		extend: {},
+		extend: {
+            transitionDuration: {
+                '2000': '2000ms',
+            }
+        },
 	},
 	plugins: [],
 }

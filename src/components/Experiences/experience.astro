@@ -1,28 +1,75 @@
 ---
 const { experience, reverse } = Astro.props;
+import {Image} from 'astro:assets';
 ---
 
-<section class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5">
+<section class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-5 relative group">
+    <!--logo-->
+    <div class="size-10 p-1 rounded-full bg-white absolute top-6 -left-11 flex items-center justify-center">
+        <Image src={experience.logo} class="object-contain rounded-full" alt={experience.title} title={experience.title} width="100%" height="100%" />
+    </div>
+
     <!--image-->
     <div class={`xl:col-span-3 ${reverse ? 'order-1' : 'order-1 lg:order-2'}`}>
         <div class="w-full relative pt-[56.25%]">
-            <div class="absolute top-0 left-0 size-full bg-red-500"></div>
+            <div class="absolute top-0 left-0 size-full bg-no-repeat bg-cover bg-top transition-all duration-2000 group-hover:bg-bottom" style={{ backgroundImage: `url(${experience.src})` }}></div>
         </div>
     </div>
 
     <!-- description -->
-    <div class={`px-4 py-2 lg:py-4 lg:px-6 xl:px-10 flex flex-col justify-between xl:col-span-2 ${reverse ? 'order-2 lg:order-1' : 'order-2'}`}>
+    <div class={`mt-4 lg:py-4 lg:px-6 xl:px-10 flex flex-col justify-between gap-4 xl:col-span-2 ${reverse ? 'order-2 lg:order-1' : 'order-2'}`}>
         <div>
             <div class="flex items-center gap-2">
                 <h2 class="text-gray-200 text-xl"> {experience.title} </h2>
 
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-indigo-400 hover:text-indigo-500 cursor-pointer transition-all">
+                <svg onclick=`toggleDetailModal(${JSON.stringify(experience)})` xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 text-indigo-400 hover:text-indigo-500 cursor-pointer transition-all">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
                 </svg>
             </div>
-            <p class="text-gray-400 text-base leading-7 tracking-wide lg:line-clamp-4 mt-2"> {experience.description} </p>
+            <p class="text-gray-400 text-base leading-7 tracking-wide line-clamp-3 mt-2"> {experience.description} </p>
         </div>
+        
         <a href={experience.link} class="h-10 px-10 rounded-md bg-indigo-400 hover:bg-indigo-500 transition-all inline-flex items-center ml-auto text-gray-100 text-lg" target="_blank" title={experience.title}> Demo </a>
     </div>
 </section>
 
+<script>
+
+    const showElement = (id) => {
+        const elem = document.getElementById(id);
+        elem.classList.remove("hidden");
+    }
+
+    const showContent = (id, obj) => {
+        const elem = document.getElementById(id);
+        const title = elem.querySelector("h2");
+        const description = elem.querySelector("p");
+        const list = elem.querySelector("ul");
+        const a = elem.querySelector("a");
+
+        list.innerHTML = "";
+
+        title.textContent = obj.title;
+        description.textContent = obj.description;
+        obj.techList.forEach(tech => {
+            const li = document.createElement("li");
+            li.classList.add('px-4', 'h-9', 'rounded', 'bg-gray-900', 'text-green-500', 'select-none', 'flex', 'items-center', 'gap-2');
+            const span = document.createElement("span");
+            span.textContent = tech.title;
+            span.classList.add('text-sm');
+            const img = document.createElement("img");
+            img.src = tech.icon;
+            img.classList.add('h-6', 'flex-none');
+            li.appendChild(img);
+            li.appendChild(span);
+            list.appendChild(li);
+        });
+        a.href = obj.link;
+    }
+
+    window.toggleDetailModal = (obj) => {
+        showElement('exp-layer');
+        showElement('exp-content');
+        showContent('exp-content', obj);
+    }
+</script>

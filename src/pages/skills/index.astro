@@ -12,9 +12,67 @@ const experiencesList = [
         id: 1,
         title: 'Paye1.com',
         description: 'In my most recent role, I worked on a project called "Paye Yek", which was developed using Nuxt 3 and Tailwind CSS, with state management handled through Pinia. The project was implemented as both an SSR and SPA, and one of the main challenges was accurately filtering advertisements. Through close collaboration with the technical manager and focused research, we achieved successful results. In addition to optimizing performance and SEO, the project was also designed as a PWA (Progressive Web Application), enabling offline use of the application. I learned how to implement app installation on various devices and laid the groundwork for sending push notifications using Pusher JS as the notification provider. Along with performance and SEO optimization, I delved deeper into Service Workers. This project provided an opportunity to thoroughly familiarize myself with the fundamentals and lifecycle of Service Workers. I was able to apply this technology to deliver a smoother and more efficient user experience. This knowledge and experience enabled me to successfully implement push notification services in the project, thereby enhancing the overall user experience.',
-        src: '/',
-        link: '/',
-    }
+        src: '/assets/projects/paye1Com/fullscreen.webp',
+        logo: '/assets/projects/paye1Com/paye1.png',
+        link: 'https://paye1.com/',
+        techList: [
+            {
+                id: 1,
+                title: 'Vue js',
+                icon: '/assets/skills/vue.svg',
+            },
+            {
+                id: 2,
+                title: 'Nuxt js',
+                icon: '/assets/skills/nuxt.svg',
+            },
+            {
+                id: 3,
+                title: 'Pinia',
+                icon: '/assets/skills/pinia.svg',
+            },
+            {
+                id: 4,
+                title: 'Tailwind CSS',
+                icon: '/assets/skills/tailwind.svg',
+            },
+            {
+                id: 5,
+                title: 'Headless UI',
+                icon: '/assets/skills/headlessui.svg',
+            },
+        ],
+    },
+    {
+        id: 2,
+        title: 'Tehran DJ',
+        description: 'This project was my first personal experience where I independently took full responsibility for starting and developing it from scratch to completion. Along the way, I encountered numerous challenges, which I overcame by relying on my research skills and precise error analysis, ultimately completing the project successfully. The project was an e-commerce platform, and the most significant challenges arose in the product filtering and shopping cart management sections. The development began with Nuxt.js version 3, and I used Pinia for state management. For the UI design, I utilized Tailwind CSS and also implemented dark mode functionality. The site was built using SSR (Server-Side Rendering), and currently, the admin panel section is not yet fully deployed. The backend for this project was developed using Laravel.',
+        src: '/assets/projects/tehrandj/light.webp',
+        logo: '/assets/projects/tehrandj/logo.png',
+        link: 'https://front.tehrandj.com/',
+        techList: [
+            {
+                id: 1,
+                title: 'Vue js',
+                icon: '/assets/skills/vue.svg',
+            },
+            {
+                id: 2,
+                title: 'Nuxt js',
+                icon: '/assets/skills/nuxt.svg',
+            },
+            {
+                id: 3,
+                title: 'Pinia',
+                icon: '/assets/skills/pinia.svg',
+            },
+            {
+                id: 4,
+                title: 'Tailwind CSS',
+                icon: '/assets/skills/tailwind.svg',
+            },
+        ],
+    },
 ]
 ---
 
@@ -167,13 +225,42 @@ const experiencesList = [
         <!-- experiences -->
         <div class="mt-16 container">
             <h1 class="text-gray-100 text-2xl"> My Experiences </h1>
-            <ul class="list-none mt-4">
+            <ul class="list-none mt-4 relative before:absolute before:content-[''] before:bg-gray-600 before:top-0 before:w-px before:h-full pl-2">
                 {experiencesList.map((experience, index) => (
-                    <li>
+                    <li class="pl-6 mt-10 first:mt-0">
                         <Experience experience={experience} reverse={index%2 == 0} />
                     </li>
                 ))}
             </ul>
         </div>
+
+        <!--modal layer-->
+        <div class="fixed hidden top-0 left-0 size-full bg-gray-900/50" id="exp-layer"></div>
+
+        <!-- modal content-->
+        <div class="fixed hidden z-[1] top-0 left-0 size-full bg-gray-800 lg:rounded-lg p-4 overflow-auto" id="exp-content">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 absolute top-4 right-4 text-gray-200 cursor-pointer" onclick="closeModal()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <h2 class="text-gray-200 text-xl pr-10"></h2>
+            <p class="text-gray-400 text-base leading-7 tracking-wide mt-4"></p>
+
+            <ul class="list-none flex items-center gap-2 flex-wrap mt-10"></ul>
+            <a href="#" class="mx-auto inline-flex items-center rounded-md bg-indigo-400 hover:bg-indigo-500 transition-all h-10 text-gray-100 text-lg px-10 mt-6" target="_blank"> Demo </a>
+        </div>
     </main>
 </Layout>
+
+<script>
+
+    const hideElement = (id) => {
+        const elem = document.getElementById(id);
+        elem.classList.add("hidden");
+    }
+
+    window.closeModal = () => {
+        hideElement("exp-content");
+        hideElement("exp-layer");
+    }
+
+</script>
