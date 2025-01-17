@@ -1,8 +1,6 @@
 ---
 
 const currentPath = Astro.url.pathname;
-// const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
-
 
 ---
 
@@ -12,7 +10,7 @@ const currentPath = Astro.url.pathname;
             <a href="/" class=""> Home </a>
         </li>
         <li class={`hover:before:scale-x-100 ${currentPath === '/projects' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="/skills" class=""> Projects </a>
+            <a href="/projects" class=""> Projects </a>
         </li>
         <li class={`hover:before:scale-x-100 ${currentPath === '/experiences' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
             <a href="/" class=""> Experiences </a>
@@ -32,8 +30,8 @@ const currentPath = Astro.url.pathname;
         <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/' ? 'text-green-500' : 'text-gray-200'}`}>
             <a href="/" class=""> Home </a>
         </div>
-        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/skills' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="/skills" class=""> Projects </a>
+        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/projects' ? 'text-green-500' : 'text-gray-200'}`}>
+            <a href="/projects" class=""> Projects </a>
         </div>
         <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/experiences' ? 'text-green-500' : 'text-gray-200'}`}>
             <a href="/" class=""> Experiences </a>
