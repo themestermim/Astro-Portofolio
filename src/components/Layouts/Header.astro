@@ -14,13 +14,13 @@ const currentPath = Astro.url.pathname;
             <a href="/skills" class=""> Skills </a>
         </li>
         <li class={`hover:before:scale-x-100 ${currentPath === '/experiences' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="#" class=""> Experiences </a>
+            <a href="/" class=""> Experiences </a>
         </li>
         <li class={`hover:before:scale-x-100 ${currentPath === '/experiences' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="#" class=""> Projects </a>
+            <a href="/" class=""> Projects </a>
         </li>
         <li class={`hover:before:scale-x-100 ${currentPath === '/contact' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="#" class=""> Contacts </a>
+            <a href="/" class=""> Contacts </a>
         </li>
     </ul>
 
@@ -38,13 +38,13 @@ const currentPath = Astro.url.pathname;
             <a href="/skills" class=""> Skills </a>
         </div>
         <div class={`text-sm text-gray-200 transition-all absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible mobile-menu-item ${currentPath === '/experiences' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="#" class=""> Experiences </a>
+            <a href="/" class=""> Experiences </a>
         </div>
         <div class={`text-sm text-gray-200 transition-all absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible mobile-menu-item ${currentPath === '/experiences' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="#" class=""> Projects </a>
+            <a href="/" class=""> Projects </a>
         </div>
         <div class={`text-sm text-gray-200 transition-all absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible mobile-menu-item ${currentPath === '/contact' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="#" class=""> Contacts </a>
+            <a href="/" class=""> Contacts </a>
         </div>
     </div>
 </header>
