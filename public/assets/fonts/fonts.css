@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url('/assets/fonts/archivo/medium.woff') format('woff');
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('/assets/fonts/archivo/normal.woff') format('woff');
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
