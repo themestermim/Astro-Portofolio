@@ -15,7 +15,7 @@ import {Image} from 'astro:assets';
 
     <!--image-->
     <div class="group">
-        <a href={projects.link} class="w-full relative pt-[56.25%] block">
+        <a href={projects.link} title={projects.title} aria-label={projects.title} target="_blank" class="w-full relative pt-[56.25%] block">
             <div class="absolute top-0 left-0 size-full bg-no-repeat bg-cover bg-top transition-all duration-4000 group-hover:bg-bottom rounded-lg ease-linear" style={{ backgroundImage: `url(${projects.src})` }}></div>
         </a>
     </div>
@@ -29,7 +29,7 @@ import {Image} from 'astro:assets';
         </div>
 
         <div class="flex items-center gap-4">
-            <a href={projects.link} class="h-10 px-10 rounded-md bg-transparent border border-indigo-500 hover:bg-indigo-500 transition-all inline-flex items-center text-gray-100 text-lg" target="_blank" title={projects.title}> Demo </a>
+            <a href={projects.link} class="h-10 px-10 rounded-md bg-transparent border border-indigo-500 hover:bg-indigo-500 transition-all inline-flex items-center text-gray-100 text-lg" target="_blank" title={projects.title} aria-label={projects.title}> Demo </a>
             <button type="button" role="button" class="h-10 px-10 rounded-md transition-all inline-flex items-center text-gray-100 text-lg border border-green-600 bg-transparent hover:bg-green-600" onclick=`toggleDetailModal(${JSON.stringify(projects)})`> Detail </button>
         </div>
     </div>
