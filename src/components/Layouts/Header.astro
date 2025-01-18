@@ -4,7 +4,7 @@ const currentPath = Astro.url.pathname;
 
 ---
 
-<header class="fixed bottom-4 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:static sm:h-16 sm:bg-gray-800 sm:w-full z-10" id="main-header">
+<header class="fixed bottom-4 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:h-16 sm:bg-gray-800 sm:w-full z-10 sm:sticky sm:top-0 sm:left-0" id="main-header">
     <ul class="hidden sm:container list-none sm:flex items-center sm:gap-6 sm:h-full text-gray-100 sm:*:h-10 sm:*:relative sm:*:flex *:items-center *:cursor-pointer *:before:hidden sm:*:before:block *:before:absolute *:before:content-[''] *:before:w-full *:before:h-0.5 *:before:transition-transform *:before:bg-green-500 *:before:bottom-0 *:before:rounded *:before:origin-center">
         <li class={`hover:before:scale-x-100 ${currentPath === '/' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
             <a href="/" class=""> Home </a>
