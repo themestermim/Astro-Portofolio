@@ -88,3 +88,11 @@
         display: none;
     }
 }
+
+#experiences-list li:nth-child(2n+1) .logo {
+    @apply -left-20;
+}
+
+#experiences-list li:nth-child(2n) .logo {
+    @apply -right-20;
+}

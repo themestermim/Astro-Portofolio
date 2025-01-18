@@ -239,4 +239,25 @@ export const projectsList = [
             },
         ],
     },
-]
+];
+
+export const experiencesList = [
+    {
+        id: 1,
+        name: 'Novin Arka',
+        role: 'Frontend Developer',
+        start: 'December 2020',
+        end: 'November 2022',
+        description: 'I started working as a programmer at Novin Arka Company, where I expanded my experience with programming languages such as Laravel Blade, Vue.js, and Alpine.js. In this environment, I developed teamwork skills and successfully managed the initial challenges of my role. Additionally, during my military service, I collaborated with the company part-time, which significantly enhanced my technical knowledge and work experience.',
+        logo: '/assets/experiences/arka/logo.png',
+    },
+    {
+        id: 2,
+        name: 'Arasb Pishtaz',
+        role: 'Frontend Developer',
+        start: 'February 2024',
+        end: 'Now',
+        description: 'During my time with this company, I significantly improved my problem-solving, research, and teamwork skills. I gained hands-on experience with frameworks like Nuxt.js, Tailwind CSS, and Pinia and developed valuable expertise in performance optimization and SEO. Additionally, I worked as a WordPress developer on various projects and adapted to a new team environment, which enhanced my ability to collaborate with colleagues of diverse personalities. I also became familiar with using AI tools as assistants in projects, which played a key role in optimizing workflows.',
+        logo: '/assets/experiences/arasb/logo.png',
+    },
+];
