@@ -2,12 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import {Image} from 'astro:assets';
 import SeoImage from '../../assets/images/home/seo.png';
-import Experience from '../../components/Experiences/experience.astro';
+import Project from '../../components/Projects/project.astro';
 
 const pageTitle = "Mehran Mahmoudi | Skills";
 const pageDescription = "I'm pretty comfortable with languages like Tailwind,  JavaScript, Vue.js, and Nuxt.js, and my expertise lies in developing complex user interfaces and optimizing website performance. I also have experience in improving SEO and a basic understanding of UI/UX.";
 
-const experiencesList = [
+const projectsList = [
     {
         id: 1,
         title: 'Paye1.com',
@@ -262,7 +262,7 @@ const experiencesList = [
                         <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </li>
-                <li class="text-gray-400"> Skills </li>
+                <li class="text-gray-400"> Projects </li>
             </ul>
         </div>
 
@@ -401,9 +401,9 @@ const experiencesList = [
         <div class="mt-16 container">
             <h1 class="text-gray-100 text-2xl"> My Experiences </h1>
             <ul class="list-none grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mt-4 relative before:absolute before:content-[''] before:bg-gray-600 before:top-0 before:left-2 lg:before:left-1/2 before:w-px before:h-full pl-2 lg:pl-0">
-                {experiencesList.map((experience, index) => (
+                {projectsList.map((projects, index) => (
                     <li class="pl-6 lg:pl-0">
-                        <Experience experience={experience} reverse={index%2 == 0} />
+                        <Project projects={projects} reverse={index%2 == 0} />
                     </li>
                 ))}
             </ul>
