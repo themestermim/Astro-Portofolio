@@ -6,7 +6,7 @@ import Skills from '../components/Skills/index.astro';
 import Experiences from '../components/Experiences/Experiences.astro';
 import Projects from '../components/Projects/projects.astro';
 
-const pageTitle = "Hi, I'm Mehran Mahmoudi";
+const pageTitle = "Mehran Mahmoudi | Frontend Developer";
 const pageDescription = "I'm pretty comfortable with languages like Tailwind,  JavaScript, Vue.js, and Nuxt.js, and my expertise lies in developing complex user interfaces and optimizing website performance. I also have experience in improving SEO and a basic understanding of UI/UX.";
 
 ---
@@ -15,14 +15,73 @@ const pageDescription = "I'm pretty comfortable with languages like Tailwind,  J
     <main class="py-8">
         <Info />
 
-        <!-- skills -->
-        <Skills />
+        <div class="seprate-section" id="skills-section">
+            <!-- skills -->
+            <Skills />
 
-        <!-- projects -->
-        <Projects />
+            <!-- projects -->
+            <Projects />
+        </div>
 
         <!--experiences-->
         <Experiences />
     </main>
 </Layout>
 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('.seprate-section');
+        const desktopNavLinks = document.querySelectorAll('header ul li');
+        const mobileNavLinks = document.querySelectorAll('.mobile-menu-list div');
+
+        const checkScroll = () => {
+            const scrollPosition = window.scrollY;
+            if(window.innerWidth >= 640) {
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    // بررسی آیا اسکرول کاربر در محدوده این بخش است
+                    if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
+                        // حذف کلاس active از تمام لینک‌ها
+                        desktopNavLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+
+                        // اضافه کردن کلاس active به لینک مربوطه
+                        const correspondingLink = document.querySelector(`header ul a[href="#${sectionId}"]`);
+                        if (correspondingLink) {
+                            correspondingLink.parentElement.classList.add('active');
+                        }
+                    }
+                });
+            } else {
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    // بررسی آیا اسکرول کاربر در محدوده این بخش است
+                    if (scrollPosition >= sectionTop - 100 && scrollPosition < sectionTop + sectionHeight - 100) {
+                        // حذف کلاس active از تمام لینک‌ها
+                        mobileNavLinks.forEach(link => {
+                            link.classList.remove('active');
+                        });
+
+
+                        // اضافه کردن کلاس active به لینک مربوطه
+                        const correspondingLink = document.querySelector(`header .mobile-menu-list a[href="#${sectionId}"]`);
+                        if (correspondingLink) {
+                            correspondingLink.parentElement.classList.add('active');
+                        }
+                    }
+                });
+            }
+        };
+
+        window.addEventListener('scroll', checkScroll);
+
+        checkScroll();
+    });
+</script>
