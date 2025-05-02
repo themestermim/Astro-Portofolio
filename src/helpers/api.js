@@ -65,12 +65,47 @@ export const projectsList = [
         ],
     },
     {
+        id: 10,
+        title: 'Ajilinemarket.com',
+        description: 'Developed a modular, SEO-friendly Nuxt application with SSR and SPA support, using Pinia for centralized state management and i18n for multilingual support.',
+        src: '/assets/projects/ajilinemarket/screen.webp',
+        logo: '/assets/projects/ajilinemarket/logo.svg',
+        link: 'https://new.ajilinemarket.com/',
+        techList: [
+            {
+                id: 1,
+                title: 'Nuxt JS',
+                icon: '/assets/skills/nuxt.svg',
+            },
+            {
+                id: 2,
+                title: 'Pinia',
+                icon: '/assets/skills/pinia.svg',
+            },
+            {
+                id: 3,
+                title: 'Tailwind CSS',
+                icon: '/assets/skills/tailwind.svg',
+            },
+            {
+                id: 4,
+                title: 'I18n',
+                icon: '/assets/skills/i18n.avif',
+            },
+            {
+                id: 5,
+                title: 'Swiper',
+                icon: '/assets/skills/swiper.svg',
+            },
+        ],
+    },
+    {
         id: 3,
         title: 'Tehran DJ',
         description: 'This project was my first personal experience where I independently took full responsibility for starting and developing it from scratch to completion. Along the way, I encountered numerous challenges, which I overcame by relying on my research skills and precise error analysis, ultimately completing the project successfully. The project was an e-commerce platform, and the most significant challenges arose in the product filtering and shopping cart management sections. The development began with Nuxt.js version 3, and I used Pinia for state management. For the UI design, I utilized Tailwind CSS and also implemented dark mode functionality. The site was built using SSR (Server-Side Rendering), and currently, the admin panel section is not yet fully deployed. The backend for this project was developed using Laravel.',
         src: '/assets/projects/tehrandj/light.webp',
         logo: '/assets/projects/tehrandj/logo.png',
-        link: 'https://front.tehrandj.com/',
+        link: 'https://tehrandj.com/',
         techList: [
             {
                 id: 1,
