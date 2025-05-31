@@ -1,26 +1,26 @@
 export const projectsList = [
     {
-        id: 1,
-        title: 'Paye1.com',
-        description: 'In my most recent role, I worked on a project called "Paye Yek", which was developed using Nuxt 3 and Tailwind CSS, with state management handled through Pinia. The project was implemented as both an SSR and SPA, and one of the main challenges was accurately filtering advertisements. Through close collaboration with the technical manager and focused research, we achieved successful results. In addition to optimizing performance and SEO, the project was also designed as a PWA (Progressive Web Application), enabling offline use of the application. I learned how to implement app installation on various devices and laid the groundwork for sending push notifications using Pusher JS as the notification provider. Along with performance and SEO optimization, I delved deeper into Service Workers. This project provided an opportunity to thoroughly familiarize myself with the fundamentals and lifecycle of Service Workers. I was able to apply this technology to deliver a smoother and more efficient user experience. This knowledge and experience enabled me to successfully implement push notification services in the project, thereby enhancing the overall user experience.',
-        src: '/assets/projects/paye1Com/fullscreen.webp',
-        logo: '/assets/projects/paye1Com/paye1.png',
-        link: 'https://paye1.com/',
+        id: 11,
+        title: 'Drfori.com',
+        description: 'I worked as a frontend developer on Drfori, a Nuxt.js-based medical platform that was originally developed by another team. My role involved redesigning and optimizing the existing codebase page by page. I restructured the entire frontend architecture to make it more maintainable and scalable, introducing Pinia for state management to handle shared data and logic between components and pages more efficiently. I also replaced the previous styling approach with Tailwind CSS to create a consistent, responsive, and modern user interface. The project was built with Server-Side Rendering (SSR), which I maintained and enhanced to ensure fast page loads and excellent SEO performance. My contributions significantly improved the overall performance, developer experience, and code quality of the platform.',
+        src: '/assets/projects/drfori/screen.webp',
+        logo: '/assets/projects/drfori/logo.png',
+        link: 'https://drfori.com/',
         techList: [
             {
                 id: 1,
-                title: 'Vue js',
-                icon: '/assets/skills/vue.svg',
-            },
-            {
-                id: 2,
-                title: 'Nuxt js',
+                title: 'Nuxt JS',
                 icon: '/assets/skills/nuxt.svg',
             },
             {
+                id: 2,
+                title: 'Javascript',
+                icon: '/assets/skills/js.svg',
+            },
+            {
                 id: 3,
-                title: 'Pinia',
-                icon: '/assets/skills/pinia.svg',
+                title: 'Headless UI',
+                icon: '/assets/skills/headlessui.svg',
             },
             {
                 id: 4,
@@ -29,8 +29,13 @@ export const projectsList = [
             },
             {
                 id: 5,
-                title: 'Headless UI',
-                icon: '/assets/skills/headlessui.svg',
+                title: 'Pinia',
+                icon: '/assets/skills/pinia.svg',
+            },
+            {
+                id: 6,
+                title: 'Swiper JS',
+                icon: '/assets/skills/swiper.svg',
             },
         ],
     },
@@ -69,7 +74,7 @@ export const projectsList = [
         title: 'Ajilinemarket.com',
         description: 'Developed a modular, SEO-friendly Nuxt application with SSR and SPA support, using Pinia for centralized state management and i18n for multilingual support.',
         src: '/assets/projects/ajilinemarket/screen.webp',
-        logo: '/assets/projects/ajilinemarket/logo.svg',
+        logo: '/assets/projects/ajilinemarket/logo.png',
         link: 'https://new.ajilinemarket.com/',
         techList: [
             {
@@ -100,12 +105,12 @@ export const projectsList = [
         ],
     },
     {
-        id: 3,
-        title: 'Tehran DJ',
-        description: 'This project was my first personal experience where I independently took full responsibility for starting and developing it from scratch to completion. Along the way, I encountered numerous challenges, which I overcame by relying on my research skills and precise error analysis, ultimately completing the project successfully. The project was an e-commerce platform, and the most significant challenges arose in the product filtering and shopping cart management sections. The development began with Nuxt.js version 3, and I used Pinia for state management. For the UI design, I utilized Tailwind CSS and also implemented dark mode functionality. The site was built using SSR (Server-Side Rendering), and currently, the admin panel section is not yet fully deployed. The backend for this project was developed using Laravel.',
-        src: '/assets/projects/tehrandj/light.webp',
-        logo: '/assets/projects/tehrandj/logo.png',
-        link: 'https://tehrandj.com/',
+        id: 1,
+        title: 'Paye1.com',
+        description: 'In my most recent role, I worked on a project called "Paye Yek", which was developed using Nuxt 3 and Tailwind CSS, with state management handled through Pinia. The project was implemented as both an SSR and SPA, and one of the main challenges was accurately filtering advertisements. Through close collaboration with the technical manager and focused research, we achieved successful results. In addition to optimizing performance and SEO, the project was also designed as a PWA (Progressive Web Application), enabling offline use of the application. I learned how to implement app installation on various devices and laid the groundwork for sending push notifications using Pusher JS as the notification provider. Along with performance and SEO optimization, I delved deeper into Service Workers. This project provided an opportunity to thoroughly familiarize myself with the fundamentals and lifecycle of Service Workers. I was able to apply this technology to deliver a smoother and more efficient user experience. This knowledge and experience enabled me to successfully implement push notification services in the project, thereby enhancing the overall user experience.',
+        src: '/assets/projects/paye1Com/fullscreen.webp',
+        logo: '/assets/projects/paye1Com/paye1.png',
+        link: 'https://paye1.com/',
         techList: [
             {
                 id: 1,
@@ -127,45 +132,10 @@ export const projectsList = [
                 title: 'Tailwind CSS',
                 icon: '/assets/skills/tailwind.svg',
             },
-        ],
-    },
-    {
-        id: 4,
-        title: 'Shahr Lavazem Khanegi',
-        description: 'I really love the fascinating "City of Home Appliances" project. It was assigned to me at a time when I didn’t yet have enough expertise in implementing complex designs, but through this project, I got the hang of it. I completed the implementation of the front-end pages, and it was decided that making it dynamic would be handled by the back-end team of the "City of Home Appliances" project, as I was about to leave for military service.',
-        src: '/assets/projects/shahrkhanegi/light.webp',
-        logo: '/assets/projects/shahrkhanegi/logo.png',
-        link: 'https://www.shahrkhanegi.com/',
-        techList: [
             {
-                id: 1,
-                title: 'Html',
-                icon: '/assets/skills/html.svg',
-            },
-            {
-                id: 2,
-                title: 'Css',
-                icon: '/assets/skills/css.svg',
-            },
-        ],
-    },
-    {
-        id: 5,
-        title: 'Carpet City',
-        description: 'In my portfolio, the "Carpet City" project holds a notable place, where I was responsible for redesigning its homepage while the other pages remained unchanged. The main challenges of this project revolved around implementing the Figma design, which I successfully overcame.',
-        src: '/assets/projects/shahrfarsh/light.webp',
-        logo: '/assets/projects/shahrfarsh/logo.png',
-        link: 'https://shahrfarsh.com/',
-        techList: [
-            {
-                id: 1,
-                title: 'Html',
-                icon: '/assets/skills/html.svg',
-            },
-            {
-                id: 2,
-                title: 'Css',
-                icon: '/assets/skills/css.svg',
+                id: 5,
+                title: 'Headless UI',
+                icon: '/assets/skills/headlessui.svg',
             },
         ],
     },
@@ -220,25 +190,70 @@ export const projectsList = [
         ],
     },
     {
-        id: 8,
-        title: 'React JS Sample',
-        description: 'This is my personal website, developed using React and Tailwind CSS, with features such as dark mode and multilingual support. My primary focus was on optimizing the user interface, particularly the shopping cart section, especially the product addition process. Additionally, a simple music player was designed and implemented on the site. This project served as a personal challenge to evaluate and improve my skills in React and Redux.',
-        src: '/assets/projects/mehrandev/light.webp',
-        logo: '/assets/projects/mehrandev/logo.svg',
-        link: 'https://mehrandev.liara.run/',
+        id: 5,
+        title: 'Carpet City',
+        description: 'In my portfolio, the "Carpet City" project holds a notable place, where I was responsible for redesigning its homepage while the other pages remained unchanged. The main challenges of this project revolved around implementing the Figma design, which I successfully overcame.',
+        src: '/assets/projects/shahrfarsh/light.webp',
+        logo: '/assets/projects/shahrfarsh/logo.png',
+        link: 'https://shahrfarsh.com/',
         techList: [
             {
                 id: 1,
-                title: 'React JS',
-                icon: '/assets/skills/react.svg',
+                title: 'Html',
+                icon: '/assets/skills/html.svg',
             },
             {
                 id: 2,
-                title: 'Redux',
-                icon: '/assets/skills/redux.svg',
+                title: 'Css',
+                icon: '/assets/skills/css.svg',
+            },
+        ],
+    },
+    {
+        id: 4,
+        title: 'Shahr Lavazem Khanegi',
+        description: 'I really love the fascinating "City of Home Appliances" project. It was assigned to me at a time when I didn’t yet have enough expertise in implementing complex designs, but through this project, I got the hang of it. I completed the implementation of the front-end pages, and it was decided that making it dynamic would be handled by the back-end team of the "City of Home Appliances" project, as I was about to leave for military service.',
+        src: '/assets/projects/shahrkhanegi/light.webp',
+        logo: '/assets/projects/shahrkhanegi/logo.png',
+        link: 'https://www.shahrkhanegi.com/',
+        techList: [
+            {
+                id: 1,
+                title: 'Html',
+                icon: '/assets/skills/html.svg',
+            },
+            {
+                id: 2,
+                title: 'Css',
+                icon: '/assets/skills/css.svg',
+            },
+        ],
+    },
+    {
+        id: 3,
+        title: 'Tehran DJ',
+        description: 'This project was my first personal experience where I independently took full responsibility for starting and developing it from scratch to completion. Along the way, I encountered numerous challenges, which I overcame by relying on my research skills and precise error analysis, ultimately completing the project successfully. The project was an e-commerce platform, and the most significant challenges arose in the product filtering and shopping cart management sections. The development began with Nuxt.js version 3, and I used Pinia for state management. For the UI design, I utilized Tailwind CSS and also implemented dark mode functionality. The site was built using SSR (Server-Side Rendering), and currently, the admin panel section is not yet fully deployed. The backend for this project was developed using Laravel.',
+        src: '/assets/projects/tehrandj/light.webp',
+        logo: '/assets/projects/tehrandj/logo.png',
+        link: 'https://tehrandj.com/',
+        techList: [
+            {
+                id: 1,
+                title: 'Vue js',
+                icon: '/assets/skills/vue.svg',
+            },
+            {
+                id: 2,
+                title: 'Nuxt js',
+                icon: '/assets/skills/nuxt.svg',
             },
             {
                 id: 3,
+                title: 'Pinia',
+                icon: '/assets/skills/pinia.svg',
+            },
+            {
+                id: 4,
                 title: 'Tailwind CSS',
                 icon: '/assets/skills/tailwind.svg',
             },
@@ -266,6 +281,31 @@ export const projectsList = [
                 id: 3,
                 title: 'AOS JS',
                 icon: '/assets/skills/aos.png',
+            },
+            {
+                id: 3,
+                title: 'Tailwind CSS',
+                icon: '/assets/skills/tailwind.svg',
+            },
+        ],
+    },
+    {
+        id: 8,
+        title: 'React JS Sample',
+        description: 'This is my personal website, developed using React and Tailwind CSS, with features such as dark mode and multilingual support. My primary focus was on optimizing the user interface, particularly the shopping cart section, especially the product addition process. Additionally, a simple music player was designed and implemented on the site. This project served as a personal challenge to evaluate and improve my skills in React and Redux.',
+        src: '/assets/projects/mehrandev/light.webp',
+        logo: '/assets/projects/mehrandev/logo.svg',
+        link: 'https://mehrandev.liara.run/',
+        techList: [
+            {
+                id: 1,
+                title: 'React JS',
+                icon: '/assets/skills/react.svg',
+            },
+            {
+                id: 2,
+                title: 'Redux',
+                icon: '/assets/skills/redux.svg',
             },
             {
                 id: 3,
