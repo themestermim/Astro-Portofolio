@@ -6,17 +6,17 @@ const currentPath = Astro.url.pathname;
 
 <header class="fixed bottom-4 left-1/2 -translate-x-1/2 sm:translate-x-0 sm:h-16 sm:bg-gray-800 sm:w-full z-10 sm:sticky sm:top-0 sm:left-0" id="main-header">
     <ul class="hidden sm:container list-none sm:flex items-center sm:gap-6 sm:h-full text-gray-100 sm:*:h-10 sm:*:relative sm:*:flex *:items-center *:cursor-pointer *:before:hidden sm:*:before:block *:before:absolute *:before:content-[''] *:before:w-full *:before:h-0.5 *:before:transition-transform *:before:bg-green-500 *:before:bottom-0 *:before:rounded *:before:origin-center">
-        <li class={`hover:before:scale-x-100 ${currentPath === '/' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="/" class=""> Home </a>
+        <li class="hover:before:scale-x-100 before:scale-x-0">
+            <a href="#hero-section"> Home </a>
         </li>
-        <li class={`hover:before:scale-x-100 ${currentPath === '/projects' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="/projects" class={currentPath}> Projects </a>
+        <li class="hover:before:scale-x-100 before:scale-x-0">
+            <a href="#skills-section"> Projects </a>
         </li>
-        <li class={`hover:before:scale-x-100 ${currentPath === '/experiences' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="/" class=""> Experiences </a>
+        <li class="hover:before:scale-x-100 before:scale-x-0">
+            <a href="#experiences-section"> Experiences </a>
         </li>
-        <li class={`hover:before:scale-x-100 ${currentPath === '/contact' ? 'before:scale-x-100' : 'before:scale-x-0'}`}>
-            <a href="/" class=""> Contacts </a>
+        <li class="hover:before:scale-x-100 before:scale-x-0">
+            <a href="#contact-section"> Contacts </a>
         </li>
     </ul>
 
@@ -27,17 +27,17 @@ const currentPath = Astro.url.pathname;
     </button>
 
     <div class="contents sm:hidden mobile-menu-list text-sm font-medium *:transition-all *:absolute">
-        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="/" class=""> Home </a>
+        <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item text-gray-200">
+            <a href="#hero-section"> Home </a>
         </div>
-        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/projects' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="/projects" class=""> Projects </a>
+        <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item text-gray-200">
+            <a href="#skills-section"> Projects </a>
         </div>
-        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/experiences' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="/" class=""> Experiences </a>
+        <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item text-gray-200">
+            <a href="#experiences-section"> Experiences </a>
         </div>
-        <div class={`top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item ${currentPath === '/contact' ? 'text-green-500' : 'text-gray-200'}`}>
-            <a href="/" class=""> Contacts </a>
+        <div class="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 invisible bg-gray-700 px-2.5 py-0.5 rounded mobile-menu-item text-gray-200">
+            <a href="#contact-section"> Contacts </a>
         </div>
     </div>
 </header>

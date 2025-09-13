@@ -55,6 +55,23 @@
     transition-delay: 300ms;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 16px;
+
+    @media screen and (min-width: 640px) {
+        scroll-padding-top: 80px;
+    }
+}
+
+header ul li.active:before {
+    transform: scaleX(1);
+}
+
+.mobile-menu-list div.active {
+    color: #22c55e;
+}
+
 /*.mobile-menu-list.active .mobile-menu-item:nth-child(5) {*/
 /*    top: 0rem;*/
 /*    left: 5rem;*/

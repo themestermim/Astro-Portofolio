@@ -1,28 +1,31 @@
 ---
 
 import {Image} from 'astro:assets';
-import PreviewImage from '../../assets/images/home/preview.webp';
+import PreviewImage from '../../assets/images/home/myself.webp';
 
 ---
 
-<section class="grid grid-cols-1 gap-6 md:grid-cols-2 container">
-    <div class="order-1 md:order-2 flex flex-col md:justify-center">
-        <h1 class="text-2xl font-medium text-gray-100 lg:text-3xl xl:text-5xl"> Mehran Mahmoudi </h1>
-        <p class="mt-4 text-gray-400 text-lg leading-7 lg:text-xl lg:leading-8 lg:mt-6 xl:text-2xl xl:leading-9"> I'm pretty comfortable with languages like Tailwind,  JavaScript, Vue.js, and Nuxt.js, and my expertise lies in developing complex user interfaces and optimizing website performance. I also have experience in improving SEO and a basic understanding of UI/UX. </p>
+<section class="seprate-section" id="hero-section">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 container">
+        <div class="order-1 md:order-2 flex flex-col md:justify-center">
+            <h1 class="text-2xl font-medium text-gray-100 lg:text-3xl xl:text-5xl"> Mehran Mahmoudi </h1>
+            <p class="mt-4 text-gray-400 text-lg leading-7 lg:text-xl lg:leading-8 lg:mt-6 xl:text-2xl xl:leading-9"> I'm pretty comfortable with languages like Tailwind,  JavaScript, Vue.js, and Nuxt.js, and my expertise lies in developing complex user interfaces and optimizing website performance. I also have experience in improving SEO and a basic understanding of UI/UX. </p>
+        </div>
+
+        <div class="order-2 md:order-1 flex">
+            <div class="h-60 md:h-80 lg:h-96 xl:h-[28rem]">
+                <Image class="w-auto h-full" src={PreviewImage} alt="Mehran Mahmoudi" />
+            </div>
+        </div>
     </div>
 
-    <div class="order-2 md:order-1 flex">
-        <div class="h-60 md:h-80 lg:h-96 xl:h-[28rem]">
-            <Image class="w-auto h-full" src={PreviewImage} alt="Mehran Mahmoudi" />
-        </div>
+    <div class="container mt-10">
+        <section class="p-4 md:px-8 bg-gray-800 rounded-md max-w-3xl mx-auto">
+            <h2 class="text-2xl text-gray-100"> Description </h2>
+            <p class="text-gray-400 text-base leading-6 md:text-lg md:leading-7 tracking-wide mt-2 md:mt-4">
+                I am highly proficient in <strong class="font-semibold text-green-500"> JavaScript </strong>, <strong class="font-semibold text-green-500"> Vue.js </strong>, and <strong class="font-semibold text-green-500"> Nuxt.js </strong>, with extensive experience in developing advanced user interfaces and optimizing the performance of web applications. In addition to expertise in <strong class="font-semibold text-green-500"> SEO </strong> enhancement techniques, I have a solid understanding of <strong class="font-semibold text-green-500"> UI/UX </strong> concepts. With over three years of experience executing e-commerce projects and interactive applications, I have developed deep problem-solving skills and the ability to conduct effective research. While specializing in front-end development, I am also well-versed in back-end concepts and have hands-on experience with the Blade template engine and the <strong class="font-semibold text-green-500"> Laravel </strong> framework in several projects. Collaborating with professional teams to share knowledge and engage in continuous learning is one of my key aspirations. I seek opportunities that challenge and excite me, pushing me to grow further. Beyond my current expertise, I have recently been exploring blockchain technology and firmly believe it will play a pivotal role in the future of software development. To stay ahead of the curve, I aim to leverage this emerging technology to update my skills and remain competitive in the global market.
+            </p>
+        </section>
     </div>
 </section>
 
-<div class="container mt-10">
-    <section class="p-4 md:px-8 bg-gray-800 rounded-md max-w-3xl mx-auto">
-        <h2 class="text-2xl text-gray-100"> Description </h2>
-        <p class="text-gray-400 text-base leading-6 md:text-lg md:leading-7 tracking-wide mt-2 md:mt-4">
-            I am highly proficient in <strong class="font-semibold text-green-500"> JavaScript </strong>, <strong class="font-semibold text-green-500"> Vue.js </strong>, and <strong class="font-semibold text-green-500"> Nuxt.js </strong>, with extensive experience in developing advanced user interfaces and optimizing the performance of web applications. In addition to expertise in <strong class="font-semibold text-green-500"> SEO </strong> enhancement techniques, I have a solid understanding of <strong class="font-semibold text-green-500"> UI/UX </strong> concepts. With over three years of experience executing e-commerce projects and interactive applications, I have developed deep problem-solving skills and the ability to conduct effective research. While specializing in front-end development, I am also well-versed in back-end concepts and have hands-on experience with the Blade template engine and the <strong class="font-semibold text-green-500"> Laravel </strong> framework in several projects. Collaborating with professional teams to share knowledge and engage in continuous learning is one of my key aspirations. I seek opportunities that challenge and excite me, pushing me to grow further. Beyond my current expertise, I have recently been exploring blockchain technology and firmly believe it will play a pivotal role in the future of software development. To stay ahead of the curve, I aim to leverage this emerging technology to update my skills and remain competitive in the global market.
-        </p>
-    </section>
-</div>

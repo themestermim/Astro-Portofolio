@@ -20,10 +20,10 @@ import {projectsList} from '../../helpers/api';
     </div>
 
     <!--modal layer-->
-    <div class="fixed hidden top-0 left-0 size-full bg-gray-900/50" id="exp-layer" onclick="closeModal()"></div>
+    <div class="fixed hidden top-0 left-0 size-full bg-gray-900/50 z-10" id="exp-layer" onclick="closeModal()"></div>
 
     <!-- modal content-->
-    <div class="fixed hidden z-[1] top-0 left-0 size-full bg-gray-800 lg:rounded-lg p-4 overflow-auto md:top-1/2 md:left-1/2 md:h-auto md:max-w-xl md:-translate-x-1/2 md:-translate-y-1/2 md:max-h-[75vh] md:rounded-lg lg:max-w-3xl" id="exp-content">
+    <div class="fixed hidden z-20 top-0 left-0 size-full bg-gray-800 lg:rounded-lg p-4 overflow-auto md:top-1/2 md:left-1/2 md:h-auto md:max-w-xl md:-translate-x-1/2 md:-translate-y-1/2 md:max-h-[75vh] md:rounded-lg lg:max-w-3xl" id="exp-content">
         <!--close-->
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 absolute top-4 right-4 text-gray-200 cursor-pointer" onclick="closeModal()">
             <path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
