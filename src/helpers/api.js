@@ -1,11 +1,46 @@
 export const projectsList = [
+    // {
+    //     id: 1,
+    //     title: 'Paye1.com',
+    //     description: 'In my most recent role, I worked on a project called "Paye Yek", which was developed using Nuxt 3 and Tailwind CSS, with state management handled through Pinia. The project was implemented as both an SSR and SPA, and one of the main challenges was accurately filtering advertisements. Through close collaboration with the technical manager and focused research, we achieved successful results. In addition to optimizing performance and SEO, the project was also designed as a PWA (Progressive Web Application), enabling offline use of the application. I learned how to implement app installation on various devices and laid the groundwork for sending push notifications using Pusher JS as the notification provider. Along with performance and SEO optimization, I delved deeper into Service Workers. This project provided an opportunity to thoroughly familiarize myself with the fundamentals and lifecycle of Service Workers. I was able to apply this technology to deliver a smoother and more efficient user experience. This knowledge and experience enabled me to successfully implement push notification services in the project, thereby enhancing the overall user experience.',
+    //     src: '/assets/projects/paye1Com/fullscreen.webp',
+    //     logo: '/assets/projects/paye1Com/paye1.png',
+    //     link: 'https://paye1.com/',
+    //     techList: [
+    //         {
+    //             id: 1,
+    //             title: 'Vue js',
+    //             icon: '/assets/skills/vue.svg',
+    //         },
+    //         {
+    //             id: 2,
+    //             title: 'Nuxt js',
+    //             icon: '/assets/skills/nuxt.svg',
+    //         },
+    //         {
+    //             id: 3,
+    //             title: 'Pinia',
+    //             icon: '/assets/skills/pinia.svg',
+    //         },
+    //         {
+    //             id: 4,
+    //             title: 'Tailwind CSS',
+    //             icon: '/assets/skills/tailwind.svg',
+    //         },
+    //         {
+    //             id: 5,
+    //             title: 'Headless UI',
+    //             icon: '/assets/skills/headlessui.svg',
+    //         },
+    //     ],
+    // },
     {
         id: 1,
-        title: 'Paye1.com',
-        description: 'In my most recent role, I worked on a project called "Paye Yek", which was developed using Nuxt 3 and Tailwind CSS, with state management handled through Pinia. The project was implemented as both an SSR and SPA, and one of the main challenges was accurately filtering advertisements. Through close collaboration with the technical manager and focused research, we achieved successful results. In addition to optimizing performance and SEO, the project was also designed as a PWA (Progressive Web Application), enabling offline use of the application. I learned how to implement app installation on various devices and laid the groundwork for sending push notifications using Pusher JS as the notification provider. Along with performance and SEO optimization, I delved deeper into Service Workers. This project provided an opportunity to thoroughly familiarize myself with the fundamentals and lifecycle of Service Workers. I was able to apply this technology to deliver a smoother and more efficient user experience. This knowledge and experience enabled me to successfully implement push notification services in the project, thereby enhancing the overall user experience.',
-        src: '/assets/projects/paye1Com/fullscreen.webp',
-        logo: '/assets/projects/paye1Com/paye1.png',
-        link: 'https://paye1.com/',
+        title: 'mehbit.vercel.app',
+        description: 'In my latest personal project, I am developing an online cryptocurrency exchange using Nuxt.js, Pinia, and Tailwind CSS to tackle the technical and design challenges of this domain. The project incorporates TradingView charts for real-time price displays and is currently under development, with ongoing efforts to enhance user experience and performance.',
+        src: '/assets/projects/mehbit/fullscreen.webp',
+        logo: '/assets/projects/mehbit/logo.png',
+        link: 'https://mehbit.vercel.app/',
         techList: [
             {
                 id: 1,
@@ -26,11 +61,6 @@ export const projectsList = [
                 id: 4,
                 title: 'Tailwind CSS',
                 icon: '/assets/skills/tailwind.svg',
-            },
-            {
-                id: 5,
-                title: 'Headless UI',
-                icon: '/assets/skills/headlessui.svg',
             },
         ],
     },
